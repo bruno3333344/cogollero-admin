@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Chat</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="inbox_msg">
+      <div class="inbox_people">
+        <div class="headind_srch">
+          <div class="recent_heading">
+            <h4>Usuarios</h4>
+          </div>
+        </div>
+        <div class="inbox_chat" id="userList"></div>
+      </div>
+      <div class="mesgs">
+        <div class="msg_history" id="adminChat"></div>
+        <div class="type_msg">
+          <div class="input_msg_write">
+            <input id="adminMessageInput" type="text" placeholder="Escribe un mensaje..." />
+            <button class="msg_send_btn" onclick="sendAdminMessage()">➤</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="admin.js"></script>
+</body>
+</html>
